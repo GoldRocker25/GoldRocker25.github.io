@@ -4,14 +4,47 @@
         <title>GoldRocker25's Webpage</title>
     </head>
     <body>
-        hiiiiii this is my webpage :)))
-        <br/>
-        <a href="PokemonCardPage.html">i wouldn't click this if i were you...</a>
-        <br/>
-        <a href="https://github.com/GoldRocker25/GoldRocker25.github.io">GitHub Page</a>
-        <br/>
-        <br/>
-        <br/>
+        <header>
+            <div class="navbar">
+                <h1>Welcome to my page!</h1>
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Projects</button>
+                  <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">Project 0</a>
+                        <a href="PokemonCardPage.html">Pokemon Card Project</a>
+                        <a href="index.html">Project 2</a>
+                    </div>
+                </div>
+                <a href="index.html">GitHub Page</a>
+            </div>
+        </header>
+        
+        <h1>...this is the home page</h1>
+        
+        <script>
+        /* When the user clicks <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+        </script>
         <br/>
         <br/>
         <br/>

@@ -4,11 +4,26 @@
         <title>Pokemon Cards</title>
     </head>
     <body>
-        hiiiiii this is my pokemon card page :)))
+        <header>
+            <div class="navbar">
+                <h1>Welcome to my page!</h1>
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Projects</button>
+                  <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">Project 0</a>
+                        <a href="PokemonCardPage.html">Pokemon Card Project</a>
+                        <a href="index.html">Project 2</a>
+                    </div>
+                </div>
+                <a href="index.html">GitHub Page</a>
+            </div>
+        </header>
+        <h1>hiiiiii this is my pokemon card page :)))</h1>
         <br/>
         <a href="index.html">ah shoot go back</a>
         <br/>
-        <input type="file" id="file-selector" multiple>
+        <input type="file" id="file-selector" multiple  accept=".csv">
         <script>
           const fileSelector = document.getElementById('file-selector');
           fileSelector.addEventListener('change', (event) => {
