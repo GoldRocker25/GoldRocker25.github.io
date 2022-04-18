@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <link rel=stylesheet type="text/css" href="css/main.css">
+        <title>Pokemon Cards</title>
+    </head>
+    <body>
+        hiiiiii this is my pokemon card page :)))
+        <br/>
+        <a href="https://goldrocker25.github.io">ah shoot go back</a>
+        <br/>
+        <input type="file" id="file-selector" multiple>
+        <script>
+          const fileSelector = document.getElementById('file-selector');
+          fileSelector.addEventListener('change', (event) => {
+            const fileList = event.target.files;
+            console.log(fileList);
+          });
+        </script>
+    </body>
+</html>
